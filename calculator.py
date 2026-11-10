@@ -29,11 +29,9 @@ def mul(a,b):
     return a*b
 
 def div(a,b):
-    try:
-        assert a==0
-        return b / a
-    except ZeroDivisionError:
+    if a==0:
         raise ZeroDivisionError
+    return b / a
 
 def exp(a,b):
     return a**b
