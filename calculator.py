@@ -1,3 +1,7 @@
+# https://github.com/5030413/lab11-XD-NA
+# Partner 1: Xinlin Du
+# Partner 2: Natasha Antoniuk
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
@@ -5,10 +9,8 @@ calculator.py
 One function per operation, in order.
 """
 
-import math
-
 # First example
-<<<<<<< HEAD
+
 import math
 
 def add(a, b):
