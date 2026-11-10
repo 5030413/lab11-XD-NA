@@ -30,9 +30,9 @@ def mul(a,b):
 
 def div(a,b):
     try:
-        assert a==0, "ZeroDivisionError"
+        assert a==0
         return b / a
-    except AssertionError as e:
+    except ZeroDivisionError as e:
         print(f"Assert: {e}")
 
 def exp(a,b):
@@ -46,8 +46,5 @@ def logarithm(a, b):
     if a <= 0 or a == 1 or b <= 0:
         raise ValueError
     return math.log(b, a)
-
-
-
 
 
