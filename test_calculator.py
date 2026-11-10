@@ -1,13 +1,22 @@
+# https://github.com/5030413/lab11-XD-NA
+# Partner 1: Xinlin Du
+# Partner 2: Natasha Antoniuk
+
 import unittest
 from calculator import *
 
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
-    # def test_add(self): # 3 assertions
-    #     fill in code
+    def test_add(self): # 3 assertions
+        self.assertEqual(add(-7, -7), -14)
+        self.assertEqual(add(-7,7),0)
+        self.assertEqual(add(7+7),14)
+    # ##########################
 
-    # def test_subtract(self): # 3 assertions
-    #     fill in code
+    def test_subtract(self): # 3 assertions
+        self.assertEqual(subtract(-7,7),-14)
+        self.assertEqual(subtract(7,-7),14)
+        self.assertEqual(subtract(7,7),0)
     # ##########################
 
     ######## Partner 1
@@ -19,8 +28,8 @@ class TestCalculator(unittest.TestCase):
     # ##########################
 
     ######## Partner 2
-    # def test_divide_by_zero(self): # 1 assertion
-    #     # call division function inside, example:
+    def test_divide_by_zero(self): # 1 assertion
+        # call division function inside, example:
     #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
     #     #     div(0, 5)
     #     fill in code
