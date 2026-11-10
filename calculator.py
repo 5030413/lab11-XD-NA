@@ -5,7 +5,29 @@ calculator.py
 One function per operation, in order.
 """
 # First example
-def add(a, b): 
-    pass
+import math
+
+def add(a, b):
+    return a+b
+def sub(a,b):
+    return a-b
+def mul(a,b):
+    return a*b
+def div(a,b):
+    try:
+        assert a==0, "ZeroDivisionError"
+        return b / a
+    except AssertionError as e:
+        print(f"Assert: {e}")
+
+def log(a,b):
+    try:
+        assert b>0 and a>1, "ValueError"
+        return math.log(b,a)
+    except AssertionError as e:
+        print(f"Assert: {e}")
+
+def exp(a,b):
+    return a**b
 
 
