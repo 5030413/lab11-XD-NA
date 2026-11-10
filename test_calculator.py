@@ -6,11 +6,11 @@ import unittest
 from calculator import *
 
 class TestCalculator(unittest.TestCase):
-    ######### Partner 2
+    ######### Partner 2 (Natasha)
     def test_add(self): # 3 assertions
         self.assertEqual(add(-7, -7), -14)
         self.assertEqual(add(-7,7),0)
-        self.assertEqual(add(7+7),14)
+        self.assertEqual(add(7,7),14)
     # ##########################
 
     def test_subtract(self): # 3 assertions
@@ -32,18 +32,20 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises()
     # ##########################
 
-    ######## Partner 2
+    ######## Partner 2 (Natasha)
     def test_divide_by_zero(self): # 1 assertion
         # call division function inside, example:
         with self.assertRaises(ZeroDivisionError):
             div(0, 5)
 
-    #def test_logarithm(self): # 3 assertions
-        #insert code
+    def test_logarithm(self): # 3 assertions
+        self.assertEqual(logarithm(10,100),2)
+        self.assertEqual(logarithm(2,4),2)
+        self.assertNotEqual(logarithm(3,4),2)
 
     def test_log_invalid_base(self): # 1 assertion
         with self.assertRaises(ValueError):
-            logarithm(5,0)
+            logarithm(-1,5)
     # ##########################
     
     ######## Partner 1
